@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "package": "mprk-nonnegative-two-cycles",
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23511175",
+  "creator": "Anonymous",
+  "status": "unrefereed-candidate",
+  "manuscript": "paper.pdf",
+  "claims": [
+    {
+      "id": "conjecture-refuted",
+      "statement": "The natural universal reading of the Izgin-Kopecz-Meister-Schilling conjecture (every MPRK scheme with a nonnegative underlying Runge-Kutta tableau is globally linearly stable, Definition 1 and Conjecture 2 of the paper) is false.",
+      "basis": "Theorem 5",
+      "status": "certified",
+      "evidence": [
+        "certificates/C1_mprk22_cycle_certificate.json",
+        "certificates/C2_phase_portrait.json"
+      ]
+    },
+    {
+      "id": "thm5-counterexample",
+      "statement": "MPRK22(4/7) with step size 1 on y' = Ay, A = [[-9990, 10], [9990, -10]], started at (1/2, 1/2), converges to an attracting positive two-cycle (about (0.4935, 0.5065) and (1.08e-7, 0.99999989)); the steady state (1/1000, 999/1000) is the unique positive fixed point on the unit-mass simplex and is locally asymptotically stable with multiplier -349959993/400110007.",
+      "basis": "Theorem 5",
+      "status": "certified",
+      "evidence": [
+        "verify_mprk22_cycle.py",
+        "verify_phase_portrait.py"
+      ]
+    },
+    {
+      "id": "thm6-phase-portrait",
+      "statement": "For the counterexample, F is strictly decreasing on (0,1) and F^2 - id has exactly five zeros; initial first components in the open interval (s_L, s_H), of length in [0.10804900399, 0.10804900400], converge to the steady state; those outside [s_L, s_H] converge to the attracting two-cycle; s_L and s_H form a repelling two-cycle.",
+      "basis": "Theorem 6",
+      "status": "certified and written proof",
+      "evidence": [
+        "verify_phase_portrait.py",
+        "certificates/C2_phase_portrait.json"
+      ]
+    },
+    {
+      "id": "thm9-parameter-interval",
+      "statement": "For every alpha in (1/2, 1/phi), 1/phi = (sqrt(5)-1)/2, MPRK22(alpha) has two-cycles for sufficiently asymmetric two-species equilibria and sufficiently large steps.",
+      "basis": "Theorem 9",
+      "status": "written proof",
+      "evidence": [
+        "paper.pdf"
+      ]
+    },
+    {
+      "id": "thm10-existence-region",
+      "statement": "For every alpha in [53/100, 56/100], p in [1e-4, 1e-3] and K in [1e4, 1e6], the two-species map F_{K,p} of MPRK22(alpha) has a positive two-cycle; hence MPRK22(alpha) does not converge to the steady state from every positive initial value for these parameters.",
+      "basis": "Theorem 10",
+      "status": "certified",
+      "evidence": [
+        "verify_existence_region.py",
+        "certificates/C6_existence_region.json"
+      ]
+    },
+    {
+      "id": "thm11-attracting-sets",
+      "statement": "(a) For each alpha in {13/25, 11/20, 4/7} and p in {1e-3, 1e-4, 1e-5}, F_{K,p} has an attracting positive two-cycle for every K >= 1e4, as does the limit map; (b) every (alpha, p, K) with alpha in (4/7)[1-1e-4, 1+1e-4], p in 1e-3[1-1e-3, 1+1e-3], K in 1e4[1-1e-3, 1+1e-3] has an attracting positive two-cycle.",
+      "basis": "Theorem 11",
+      "status": "certified",
+      "evidence": [
+        "verify_effective_region.py",
+        "certificates/C4_effective_region.json"
+      ]
+    },
+    {
+      "id": "thm12-three-species",
+      "statement": "MPRK22(4/7) has an attracting two-cycle for the reversible chain A <-> B <-> C stated in Theorem 12.",
+      "basis": "Theorem 12",
+      "status": "certified",
+      "evidence": [
+        "verify_three_state_cycle.py",
+        "certificates/C3_three_state_cycle.json"
+      ]
+    },
+    {
+      "id": "thm13-third-order",
+      "statement": "MPRK43II(37/50), all of whose nonzero tableau coefficients are positive (a21 = 2/3, a31 = 73/222, a32 = 25/74, b = (1/4, 1/100, 37/50)), applied with step 1 to the two-species system with K = 1e7, p = 1e-4: the steady state is a locally asymptotically stable fixed point (F'(p) about -0.6250), yet every initial value with first component in H = [0.4935, 0.5035], including (1/2, 1/2), converges to an attracting two-cycle. Uniqueness of its positive fixed point is not claimed.",
+      "basis": "Theorem 13",
+      "status": "certified",
+      "evidence": [
+        "verify_mprk43_cycle.py",
+        "certificates/C7_mprk43_cycle.json"
+      ]
+    },
+    {
+      "id": "prop14-no-spurious-fixed-points",
+      "statement": "For 1/2 <= alpha <= 1, MPRK22(alpha) has no spurious positive fixed points on irreducible positive conservative linear systems in any dimension.",
+      "basis": "Proposition 14",
+      "status": "written proof",
+      "evidence": [
+        "paper.pdf"
+      ]
+    },
+    {
+      "id": "thm15-alpha-half",
+      "statement": "MPRK22(1/2) converges to the steady state on every two-species positive conservative linear system, for every step size and positive initial value.",
+      "basis": "Theorem 15",
+      "status": "written proof; identities certified",
+      "evidence": [
+        "verify_algebraic_identities.py",
+        "certificates/C5_algebraic_identities.json"
+      ]
+    },
+    {
+      "id": "thm16-alpha-one",
+      "statement": "MPRK22(1) converges to the steady state on every two-species positive conservative linear system, for every step size and positive initial value.",
+      "basis": "Theorem 16",
+      "status": "written proof; identities certified",
+      "evidence": [
+        "verify_algebraic_identities.py",
+        "certificates/C5_algebraic_identities.json"
+      ]
+    },
+    {
+      "id": "conj17-refined",
+      "statement": "Refined conjecture (open): (a) for alpha > 0, two-species global linear stability of MPRK22(alpha) holds if and only if alpha = 1/2 or alpha >= 1/phi; (b) MPRK22(1) is globally linearly stable in all dimensions.",
+      "basis": "Conjecture 17",
+      "status": "conjecture",
+      "evidence": [
+        "paper.pdf"
+      ]
+    },
+    {
+      "id": "exploratory",
+      "statement": "Phase diagram, random-network frequencies, embedded error-estimator values, nonlinear benchmarks and other-scheme scans.",
+      "basis": "Sections 5.3, 6.2, 8",
+      "status": "exploratory (floating point, not proofs)",
+      "evidence": [
+        "exploratory/"
+      ]
+    }
+  ],
+  "notClaimed": [
+    "Proof-assistant formalisation of any result.",
+    "External peer review, specialist review or independent reproduction by an unaffiliated party.",
+    "Historical priority beyond the dated literature search in novelty_report.md.",
+    "That the conjecture as the original authors may have intended it, restricted differently, is false; only the stated formalisation is refuted.",
+    "Closed-form thresholds p0(alpha), K0(alpha); a sharp failure region; global convergence of MPRK22(1/2) for three or more species; uniqueness of the positive fixed point of MPRK43II(37/50).",
+    "Behaviour of nonlinear production-destruction systems beyond the labelled exploratory tests."
+  ]
+}

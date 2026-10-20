@@ -1,0 +1,38 @@
+target_id: mprk22-global-stability
+search_date: 2026-10-19
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    Determine whether for every alpha>=1/2, positive time step h, conservative irreducible Metzler real N by N matrix A (N>=2), and y0>0, MPRK22(alpha) converges to the unique steady state with the same total mass. The scheme is u=(I-alpha*h*A)^(-1)y, q_i=((1-1/(2alpha))*y_i+u_i/(2alpha))/(y_i^(1-1/alpha)*u_i^(1/alpha)), G(y)=(I-h*A*diag(q))^(-1)y.
+  exclusions:
+    - No claim about arbitrary freely chosen Patankar weights.
+    - No claim that failure of a literature search proves openness.
+source:
+  originating_reference: Izgin, Kopecz, Meister, Schilling (2024), On the non-global linear stability and spurious fixed points of MPRK schemes with negative RK parameters, Sections 1, 2.1, 4.
+  url: https://doi.org/10.1007/s11075-024-01770-7
+normalisation:
+  indices: column generator, A_ij>=0 for i!=j, 1^T A=0
+  scaling: total mass 1; absorb h into A
+  basis_order: species order arbitrary
+  symmetries: [simultaneous species permutation, scaling of total mass]
+sequences: []
+generating_functions: []
+matrices:
+  - name: two_state_symmetric
+    entries: [[-1,1],[1,-1]]
+  - name: two_state_skew
+    entries: [[-9,1],[9,-1]]
+  - name: directed_three_cycle
+    entries: [[-1,0,1],[1,-1,0],[0,1,-1]]
+aliases:
+  analysis: [modified Patankar Runge Kutta, nonlinear rational iteration, global asymptotic stability, positive conservative integration]
+  probability: [Markov generator, nonlinear Markov chain, invariant simplex, stochastic resolvent]
+  combinatorics: [directed graph Laplacian]
+  mathematical_physics: [production destruction, chemical master equation, population transfer]
+  statistics_optimisation_ml: [entropy descent, nonlinear Perron Frobenius, Hilbert projective metric]
+known_invariants:
+  mass: 1^T y
+  local_stability: R(z)=(-z^2-2alpha*z+2)/(2(1-alpha*z)(1-z))
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [web search, Springer primary paper, arXiv, author publication lists]

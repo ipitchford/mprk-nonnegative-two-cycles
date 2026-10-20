@@ -1,0 +1,100 @@
+{
+  "two_state_witness": {
+    "cycle_points": [
+      [
+        0.4935222292870025,
+        0.5064777707130188
+      ],
+      [
+        1.0814760343542591e-07,
+        0.9999998918524179
+      ]
+    ],
+    "scaled_error_on_cycle_steps_atol_1e-06_rtol_0.001": [
+      467.96900351872637,
+      730.1458909577261
+    ],
+    "scaled_error_on_cycle_steps_atol_0.001_rtol_0.1": [
+      4.637989822441236,
+      7.18581862063749
+    ],
+    "scaled_error_on_cycle_steps_atol_0.01_rtol_1": [
+      0.46379898224412364,
+      0.7185818620637491
+    ],
+    "scaled_error_first_step_default_tol": 479.35920837406553,
+    "adaptive_run_T_1e6_dt0_1": {
+      "accepted": 108,
+      "rejected": 8,
+      "max_dt": 771914.7491122133,
+      "final_state": [
+        0.0009999727842259197,
+        0.9990000274389442
+      ],
+      "t_end": 1000000.0,
+      "final_error_vs_equilibrium": 2.7438944227853312e-08
+    },
+    "adaptive_run_T_1e6_dt0_0.0001": {
+      "accepted": 108,
+      "rejected": 2,
+      "max_dt": 748152.6428863034,
+      "final_state": [
+        0.000999966456063773,
+        0.9990000332531498
+      ],
+      "t_end": 1000000.0,
+      "final_error_vs_equilibrium": 3.3543936226983553e-08
+    }
+  },
+  "three_species_chain": {
+    "cycle_points": [
+      [
+        0.03587363173777862,
+        0.33085317805961195,
+        0.6332731902026097
+      ],
+      [
+        0.17761297073533416,
+        7.240509832987463e-10,
+        0.8223870285406151
+      ]
+    ],
+    "scaled_error_on_cycle_steps_atol_1e-06_rtol_0.001": [
+      412.5590419640922,
+      724.5077551727712
+    ],
+    "scaled_error_on_cycle_steps_atol_0.001_rtol_0.1": [
+      3.970596016717997,
+      7.058131330352504
+    ],
+    "scaled_error_on_cycle_steps_atol_0.01_rtol_1": [
+      0.3970596016717997,
+      0.7058131330352505
+    ],
+    "scaled_error_first_step_default_tol": 416.76267821031564,
+    "adaptive_run_T_1e6_dt0_1": {
+      "accepted": 130,
+      "rejected": 9,
+      "max_dt": 657296.5701370592,
+      "final_state": [
+        0.09090478097392611,
+        9.090243667951204e-05,
+        0.9090043166352874
+      ],
+      "t_end": 1000000.0,
+      "final_error_vs_equilibrium": 3.955339987649076e-06
+    },
+    "adaptive_run_T_1e6_dt0_0.0001": {
+      "accepted": 130,
+      "rejected": 3,
+      "max_dt": 655328.1799545637,
+      "final_state": [
+        0.09090472562848395,
+        9.09024166473004e-05,
+        0.9090043718493002
+      ],
+      "t_end": 1000000.0,
+      "final_error_vs_equilibrium": 3.900125974842794e-06
+    }
+  }
+}

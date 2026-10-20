@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate."
+title: "Nonnegative Runge–Kutta coefficients do not make modified Patankar schemes globally stable: a counterexample with attracting two-cycles"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23511175
+date-released: 2026-10-20
+repository-code: "https://github.com/ipitchford/mprk-nonnegative-two-cycles"
+url: "https://evidencepress.org/releases/mprk-nonnegative-two-cycles/"
+license: CC0-1.0
+keywords:
+  - modified Patankar–Runge–Kutta schemes
+  - positivity-preserving time integration
+  - global stability
+  - spurious periodic orbits
+  - computer-assisted proof
+abstract: "Counterexample to the natural universal reading of the Izgin–Kopecz–Meister–Schilling conjecture: MPRK22(4/7), with all nonzero tableau coefficients positive, has a certified attracting two-cycle on a stiff two-species linear system although the steady state is the unique positive fixed point and locally stable. Includes the complete phase portrait, parameter ranges, three-species and third-order examples, global convergence proofs for alpha = 1/2 and alpha = 1 (two species), and exact interval-arithmetic verifiers. Unrefereed, AI-assisted candidate. Original code is MIT-licensed; see LICENSES.md."

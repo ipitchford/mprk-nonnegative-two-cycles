@@ -1,0 +1,1 @@
+two-cycles found at p = 1/2 over the same (alpha, log10 K) grid: 0

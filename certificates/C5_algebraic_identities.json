@@ -1,0 +1,39 @@
+{
+  "certificate": "C5 exact polynomial identities (alpha = 1/2 and alpha = 1)",
+  "status": "PASS",
+  "input_sha256": {
+    "verify_algebraic_identities.py": "6f40f9e41075ae4f84be6775fe72ccb8926dd024b66bbd9fc1729ffb076bb5d5",
+    "mprk_exact.py": "a98a3cea24b9eca9b37e57d1847ffa2146ea5c7b3ebaee25ff962b556a24030c",
+    "mprk_maps.py": "b764fb76c1dad9696018bce82f0a5438d36a1d6c259ea8958f637bdebee9b640",
+    "certlib.py": "d3787394ba58b61fdcd255138eab317d55825260070b2843ba33862bfee53309"
+  },
+  "alpha_one_half": {
+    "U": "2t + Kp",
+    "W": "2(1-t) + K(1-p)",
+    "N": "t U W + K p (1-t)(2+K) U",
+    "D": "U W + K(1-p) t (2+K) W + K p (1-t)(2+K) U",
+    "A2_D_minus_N": "(1-t) U W + K(1-p) t (2+K) W",
+    "A3_N_minus_tD": "K(2+K)(p-t)[K(p(1-t)+t(1-p)) + 2t(1-t)]",
+    "Psi": "2*K^2*p^3*t + -1*K^2*p^3 + 2*K^2*p^2*t^2 + -5*K^2*p^2*t + 1*K^2*p^2 + -2*K^2*p*t^2 + 3*K^2*p*t + 12*K*p^2*t^2 + -12*K*p^2*t + 2*K*p^2 + -12*K*p*t^2 + 8*K*p*t + 2*K*t^2 + 8*p*t^3 + -12*p*t^2 + 4*p*t + -4*t^3 + 4*t^2",
+    "Psi_positive_form": "4ts(ps+qt) + 2K(p^2 s^2 + 4pqst + q^2 t^2) + K^2 pq(ps^2 + 3pst + 3qst + qt^2), s=1-t, q=1-p",
+    "homogenised_degrees": [
+      3,
+      3
+    ],
+    "homogenised_terms": 22,
+    "min_coefficient": "1"
+  },
+  "alpha_one": {
+    "identity": "F - p = (t-p)(1-T)/(1+K+K^2/2-(1+K)T)  (cleared form checked)",
+    "auxiliary_identity": "(1-p)t(1-u) + p(1-t)u = (1+K)u(1-u) - Kp(1-p)",
+    "endpoint_values": [
+      "K p^2/(1+K)^2",
+      "K (1-p)^2/(1+K)^2"
+    ],
+    "crossover_polynomial": "K^3 - 4K - 8",
+    "crossover_root_bracket": [
+      "2649/1000",
+      "53/20"
+    ]
+  }
+}

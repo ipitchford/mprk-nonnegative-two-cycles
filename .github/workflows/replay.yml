@@ -1,0 +1,33 @@
+name: Exact certificate replay
+on:
+  push:
+  pull_request:
+jobs:
+  fast:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Manifest integrity
+        run: sha256sum -c SHA256SUMS && sha256sum -c MANIFEST.sha256
+      - name: Negative controls (normal and optimised)
+        run: |
+          python -S -B negative_controls.py
+          python -S -B -O negative_controls.py
+      - name: Replay C1, C2, C3, C5, C7 byte for byte
+        run: python -S -B -O verify_all.py --skip-slow
+  full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Replay all seven certificates byte for byte
+        run: python -S -B -O verify_all.py

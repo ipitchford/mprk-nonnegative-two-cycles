@@ -1,0 +1,16 @@
+Recorded publication-preparation replay: 20 October 2026
+Python: 3.14.7, Clang 21.0.0 (clang-2100.1.1.101)
+Platform: macOS 27.0.1, arm64
+Verifiers and negative controls: Python standard library only (Python 3.10 or later).
+Earlier research-stage replays: Python 3.13.5 on macOS.
+Exploratory scripts (not part of the certified evidence): NumPy, Matplotlib, mpmath.
+Manuscript: pdfTeX 1.40.29 (TeX Live 2026); paper.md: Pandoc 3.9.
+
+Commands, from the repository root:
+python3 -S -O verify_all.py
+python3 -S -B negative_controls.py
+python3 -S -B -O negative_controls.py
+
+This record describes observed replays, not a claim that every platform has
+been tested. CI (GitHub Actions, Ubuntu) runs the fast replay on Python 3.10
+and 3.13 and the full replay on Python 3.13; its results are in the Actions tab.
