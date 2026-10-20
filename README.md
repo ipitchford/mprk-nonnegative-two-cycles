@@ -2,7 +2,7 @@
 
 Research package, 20 October 2026. Author: Anonymous. Unrefereed manuscript with its exact verifiers.
 
-- Version: 1.0.0-candidate (unrefereed research candidate; AI-assisted; not peer reviewed)
+- Version: 1.0.1-candidate (unrefereed research candidate; AI-assisted; not peer reviewed)
 - DOI: [10.5281/zenodo.23511175](https://doi.org/10.5281/zenodo.23511175)
 - Repository: <https://github.com/ipitchford/mprk-nonnegative-two-cycles>
 - Evidence Press page: <https://evidencepress.org/releases/mprk-nonnegative-two-cycles/>
@@ -50,7 +50,7 @@ Every failure we found involves a very lopsided equilibrium and a step much long
 - `novelty_report.md`: record of the prior-art search.
 - `target.yaml`: the originally frozen target statement.
 - `SHA256SUMS`: SHA-256 hashes of the research files listed above.
-- Release records: `STATUS.md`, `ASSURANCE.md`, `PROVENANCE.md`, `AI_INDEX.md`, `CLAIMS.json`, `REVIEW_SUMMARY.md`, `REPLAY_RECEIPT.md`, `SOURCES.md`, `CITATION_AUDIT.md`, `ENVIRONMENT.txt`, `CITATION.cff`, `.zenodo.json`, licence files, `paper.md` (accessible text of the paper) and `MANIFEST.sha256` (hashes of every shipped file).
+- Release records: `STATUS.md`, `ASSURANCE.md`, `PROVENANCE.md`, `AI_INDEX.md`, `CLAIMS.json`, `REVIEW_SUMMARY.md`, `RESEARCH_GATES.json` (prior-art, limitation and extension records), `REPLAY_RECEIPT.md`, `SOURCES.md`, `CITATION_AUDIT.md`, `ENVIRONMENT.txt`, `CITATION.cff`, `.zenodo.json`, licence files, `paper.md` (accessible text of the paper) and `MANIFEST.sha256` (hashes of every shipped file).
 
 ## How to replay
 

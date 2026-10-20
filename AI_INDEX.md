@@ -3,14 +3,14 @@
 ## Identity and starting point
 
 - Release slug: `mprk-nonnegative-two-cycles`
-- Version: `1.0.0-candidate`; DOI 10.5281/zenodo.23511175
+- Version: `1.0.1-candidate`; DOI 10.5281/zenodo.23511175
 - Scholarly creator: Anonymous
 - Manuscript: [paper.pdf](paper.pdf) (reference), [paper.md](paper.md) (text), [paper.tex](paper.tex) (source)
 - Machine-readable claims and their status: [CLAIMS.json](CLAIMS.json)
 - Overview and results table: [README.md](README.md); status: [STATUS.md](STATUS.md)
 - Evidence limits: [ASSURANCE.md](ASSURANCE.md); internal review objections without ratings: [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md)
 - Provenance and publication changes: [PROVENANCE.md](PROVENANCE.md)
-- Prior-art boundary: [novelty_report.md](novelty_report.md), [SOURCES.md](SOURCES.md), [CITATION_AUDIT.md](CITATION_AUDIT.md); original target: [target.yaml](target.yaml)
+- Prior-art boundary and limitation triage: [RESEARCH_GATES.json](RESEARCH_GATES.json), [novelty_report.md](novelty_report.md), [SOURCES.md](SOURCES.md), [CITATION_AUDIT.md](CITATION_AUDIT.md); original target: [target.yaml](target.yaml)
 - Citation metadata: [CITATION.cff](CITATION.cff), [.zenodo.json](.zenodo.json); licences: [LICENSES.md](LICENSES.md)
 
 ## Scientific map

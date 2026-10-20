@@ -5,7 +5,7 @@ author:
 - Anonymous
 date: |
   20 October 2026\
-  Version 1.0.0-candidate DOI: [10.5281/zenodo.23511175](https://doi.org/10.5281/zenodo.23511175)\
+  Version 1.0.1-candidate DOI: [10.5281/zenodo.23511175](https://doi.org/10.5281/zenodo.23511175)\
   Code and certificates: <https://github.com/ipitchford/mprk-nonnegative-two-cycles>
 title: "Nonnegative Runge–Kutta coefficients do not make modified Patankar schemes globally stable: a counterexample with attracting two-cycles"
 ---
@@ -680,7 +680,7 @@ The verifiers are short Python programs, not formal proofs in a proof assistant;
 
 #### Archive.
 
-This version (1.0.0-candidate) is archived with DOI [10.5281/zenodo.23511175](https://doi.org/10.5281/zenodo.23511175); the verifiers, certificates and exploratory scripts are at <https://github.com/ipitchford/mprk-nonnegative-two-cycles>.
+This version (1.0.1-candidate) is archived with DOI [10.5281/zenodo.23511175](https://doi.org/10.5281/zenodo.23511175); the verifiers, certificates and exploratory scripts are at <https://github.com/ipitchford/mprk-nonnegative-two-cycles>.
 
 #### Use of AI tools.
 

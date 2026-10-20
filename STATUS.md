@@ -1,6 +1,6 @@
 # Status
 
-Version: 1.0.0-candidate. DOI: 10.5281/zenodo.23511175. Scholarly creator: Anonymous.
+Version: 1.0.1-candidate. DOI: 10.5281/zenodo.23511175. Scholarly creator: Anonymous.
 
 This is an AI-assisted, unrefereed research candidate. It has not been peer
 reviewed by a journal, and no external specialist review or independent

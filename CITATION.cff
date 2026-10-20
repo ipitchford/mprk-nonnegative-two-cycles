@@ -4,7 +4,7 @@ title: "Nonnegative Runge–Kutta coefficients do not make modified Patankar sch
 type: software
 authors:
   - name: Anonymous
-version: 1.0.0-candidate
+version: 1.0.1-candidate
 doi: 10.5281/zenodo.23511175
 date-released: 2026-10-20
 repository-code: "https://github.com/ipitchford/mprk-nonnegative-two-cycles"

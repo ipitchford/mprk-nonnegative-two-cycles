@@ -34,5 +34,14 @@ release records, `paper.md`, the CI workflow and the licence files were added.
 The verifiers, libraries and certificates are unchanged; `SHA256SUMS` was
 regenerated and `MANIFEST.sha256` covers every shipped file.
 
+## Version history
+
+An earlier GitHub tag and prerelease, `v1.0.0-candidate`, was created on
+20 October 2026 from a payload that lacked the research-gate record
+`RESEARCH_GATES.json`. It was superseded before archiving by this version,
+1.0.1-candidate, which adds that record and changes the version label; the
+mathematics, verifiers and certificates are identical. Only 1.0.1-candidate
+carries the DOI. The earlier tag is left unchanged, as tags are not moved.
+
 Scholarly creator: **Anonymous**. Ian Pitchford is the repository maintainer and
 publisher through Evidence Press, not an attributed scholarly author.
